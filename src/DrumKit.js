@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import useSound from 'use-sound'
 import CHT from './sounds/DR110CHT.mp3'
 import CLP from './sounds/DR110CLP.mp3'
@@ -9,10 +9,22 @@ import SNR from './sounds/DR110SNR.mp3'
 
 function DrumKit(){
 
-    const [play] = useSound(SNR)
+    const [playCHT] = useSound(CHT)
+    const [playCLP] = useSound(CLP)
+    const [playCYM] = useSound(CYM)
+    const [playKIK] = useSound(KIK)
+    const [playOHT] = useSound(OHT)
+    const [playSNR] = useSound(SNR)
 
     return(
-        <button onClick={play} >Hello World</button>
+        <>
+            <button onClick={playCHT} >CHT</button>
+            <button onClick={playCLP} >CLP</button>
+            <button onClick={playCYM} >CYM</button>
+            <button onClick={playKIK} >KIK</button>
+            <button onClick={playOHT} >OHT</button>
+            <button onClick={playSNR} >SNR</button>
+        </>
     )
 }
 
