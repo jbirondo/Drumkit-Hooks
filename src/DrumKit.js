@@ -16,15 +16,17 @@ function DrumKit(){
     const [playOHT] = useSound(OHT)
     const [playSNR] = useSound(SNR)
 
+    const keys = {
+        '1': playCHT,
+        '2': playCLP,
+        '3': playCYM,
+        '4': playKIK,
+        '5': playOHT,
+        '6': playSNR
+    }
+
     const useKeyboardBindings = (e) => {
-        const keys = {
-            '1': playCHT,
-            '2': playCLP,
-            '3': playCYM,
-            '4': playKIK,
-            '5': playOHT,
-            '6': playSNR
-        }
+        if(!Object.keys(keys).includes(e.key)){ return }
         return keys[e.key]()
     }
 
