@@ -1,10 +1,10 @@
 import './App.css';
-import DrumButton from './DrumButton'
+import DrumKit from './DrumKit'
 
 function App() {
   return (
     <div className="App">
-      <DrumButton/>
+      <DrumKit/>
     </div>
   );
 }
