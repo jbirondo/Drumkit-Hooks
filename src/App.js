@@ -3,9 +3,7 @@ import DrumKit from './DrumKit'
 
 function App() {
   return (
-    <div className="App">
-      <DrumKit/>
-    </div>
+    <DrumKit/>
   );
 }
 

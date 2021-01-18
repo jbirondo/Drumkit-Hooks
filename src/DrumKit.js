@@ -6,6 +6,7 @@ import CYM from './sounds/DR110CYM.mp3'
 import KIK from './sounds/DR110KIK.mp3'
 import OHT from './sounds/DR110OHT.mp3'
 import SNR from './sounds/DR110SNR.mp3'
+import './DrumKit.css'
 
 function DrumKit(){
 
@@ -35,14 +36,16 @@ function DrumKit(){
     })
 
     return(
-        <>
-            <button onClick={playCHT} >CHT</button>
-            <button onClick={playCLP} >CLP</button>
-            <button onClick={playCYM} >CYM</button>
-            <button onClick={playKIK} >KIK</button>
-            <button onClick={playOHT} >OHT</button>
-            <button onClick={playSNR} >SNR</button>
-        </>
+        <div className="appContainer">
+            <div className="drumKitContainer">
+                <button onClick={playCHT} >CHT</button>
+                <button onClick={playCLP} >CLP</button>
+                <button onClick={playCYM} >CYM</button>
+                <button onClick={playKIK} >KIK</button>
+                <button onClick={playOHT} >OHT</button>
+                <button onClick={playSNR} >SNR</button>
+            </div>
+        </div>
     )
 }
 
