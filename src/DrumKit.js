@@ -38,12 +38,19 @@ function DrumKit(){
     return(
         <div className="appContainer">
             <div className="drumKitContainer">
-                <button onClick={playCHT} >CHT</button>
-                <button onClick={playCLP} >CLP</button>
-                <button onClick={playCYM} >CYM</button>
-                <button onClick={playKIK} >KIK</button>
-                <button onClick={playOHT} >OHT</button>
-                <button onClick={playSNR} >SNR</button>
+                <button onClick={playCHT} >CHT
+                    <p>1</p>
+                </button>
+                <button onClick={playCLP} >CLP
+                </button>
+                <button onClick={playCYM} >CYM
+                </button>
+                <button onClick={playKIK} >KIK
+                </button>
+                <button onClick={playOHT} >OHT
+                </button>
+                <button onClick={playSNR} >SNR
+                </button>
             </div>
         </div>
     )
