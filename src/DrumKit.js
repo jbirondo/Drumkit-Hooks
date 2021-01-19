@@ -51,8 +51,10 @@ function DrumKit(){
                     <p>4</p>
                 </button>
                 <button onClick={playOHT} >OHT
+                    <p>5</p>
                 </button>
                 <button onClick={playSNR} >SNR
+                    <p>6</p>
                 </button>
             </div>
         </div>
