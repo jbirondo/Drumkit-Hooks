@@ -45,6 +45,7 @@ function DrumKit(){
                     <p>2</p>
                 </button>
                 <button onClick={playCYM} >CYM
+                    <p>3</p>
                 </button>
                 <button onClick={playKIK} >KIK
                 </button>
